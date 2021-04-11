@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form autocomplete="on">
+
+        <fieldset>
+            <legend>BOOK A FLIGHT</legend>
+           <br>
+           
+           <label>ONE WAY</label>
+           <input type="radio" name="radio" />
+           
+           <label>ROUND TRIP</label>
+           <input type="radio" name="radio" />
+     <br>      <br>
+
+     <label for="departure">From</label>
+     <input id="departure" type="text" placeholder="Departure loction"/>
+    
+     <label for="arrival">To</label>
+     <input id="arrival" type="text" placeholder="Arrival location"/>
+     
+     <br>
+
+     <label for="date-time">Select date and time for boarding</label>
+
+     <input id="date-time" type="datetime-local" /><br />
+
+     <label for="number">Passenger(s)</label>
+     <input id="number" type="number" minlength="1" maxlength="6" placeholder="No.of passengers">
+<br>
+      <label for="First-name">First Name</label>
+      <input id="First-name" type="text" minlength="2" maxlength="10" placeholder="First Name" /> <br />
+
+      <label for="last-name">Last Name</label>
+      <input id="last-name" type="text" minlength="2" maxlength="10" placeholder="Last Name" /> <br />
+
+      <label>Gender</label>
+      <input type="radio" name="gender" />
+      <label>Male</label>
+
+      <input type="radio" name="gender" />
+      <label>Female</label>
+<br>
+  
+      <label for="email">Email</label>
+      <input id="email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      <br />
+ 
+      <label for="phone">Mobile Number</label>
+      <input id="phone" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="738-393-3446">
+
+      <br>
+      <br>
+      <form class="d-flex">
+        
+        <button class="btn btn-outline-success" type="submit">SEARCH FLIGHT</button>
+      </form>
+      

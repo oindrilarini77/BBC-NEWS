@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC HOME</title>
+
+    <style>
+        li {
+            display: inline;
+            height: 50px;
+            padding: 0 10px;
+            margin: 0 10px;
+            line-height: 50px;
+            color: rgb(235, 247, 235);
+
+        }
+        a{
+            color: white;
+        }
+        li:hover{
+          font-size: larger;
+          background-color: greenyellow;
+          color: indigo;
+
+        }
+        ul {
+
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            background-color: black;
+        }
+
+        .container-1,
+        .container-2 {
+            margin-left: 20px;
+            margin-top: 10px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .container-4,
+        .container-3 {
+            margin-left: 20px;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .container {
+            margin-left: 20px 10px 20px 20px;
+            /* margin-right: 20px;
+            margin-top: 10px;  */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .two {
+            margin-left: 20px;
+            margin-top: 10px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .top {
+            display: inline-flex;
+            height: 50px;
+            padding: 0 20px;
+            margin: 0 10px;
+            line-height: 50px;
+        }
+
+        .left {
+            padding: 0 1rem;
+            margin: 0 20px;
+            color: black;
+
+            
+
+        }
+
+        .right {
+            /* padding: 0 28rem; */
+            padding-left: 58rem;
+            margin: 0 0;
+            color: gray;
+
+           
+        }
+
+        .column-1 {
+            opacity: 1;
+            margin-top: 20px;
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            border: solid 2px rgb(243, 217, 217);
+            align-items: left;
+            width: 600px;
+            height: 530px;
+            position: relative;
+            text-align: left;
+            color: rgb(250, 245, 245);
+        }
+
+        .column-1 img {
+            height: 530px;
+            width: 600px;
+
+        }
+
+        .bottom-left {
+            position: absolute;
+            bottom: 8px;
+            left: 16px;
+        }
+
+        .row1 img {
+            margin-top: 10px;
+            height: 250px;
+            width: 370px;
+
+
+        }
+
+        .row1 {
+            opacity: 1;
+            display: inline;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+
+            height: 270px;
+            width: 400px;
+            position: relative;
+            text-align: left;
+            color: rgb(250, 245, 245);
+
+        }
+
+        .column2 {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+
+
+        .container-2 {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+        }
+
+        .container-5 {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            text-align: center;
+            height: 100px;
+            width: 1000px;
+            line-height: 100px;
+
+        }
+
+
+        .top-1 {
+            display: inline;
+            display: flex;
+            flex-direction: row;
+            background-color: rgb(248, 248, 255);
+            line-height: 20px;
+            margin-left: 35px;
+            margin-right: 64px;
+            padding-left: 2rem;
+
+        }
+
+        .row2 img {
+            margin-top: 10px;
+            height: 240px;
+            width: 450px;
+        }
+
+        .row img {
+            margin-top: 10px;
+            height: 240px;
+            width: 450px;
+        }
+
+        .row2 {
+            display: inline;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+
+            height: 550px;
+            width: 480px;
+            position: relative;
+            text-align: left;
+            color: rgb(27, 26, 26);
+
+        }
+
+        .low1 {
+            margin-top: 30px;
+            color: greenyellow;
+        }
+
+        .low2 {
+            margin-top: 30px;
+            color: rgb(252, 134, 187);
+        }
+
+        .low3 {
+            color: rgb(91, 193, 202);
+        }
+
+        .flex-items-top {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background-color: black;
+            color: red;
+        }
+
+        .flex-items {
+
+            display: flex;
+            flex-direction: row;
+            border: solid 2px black;
+            align-items: center;
+            background-color: black;
+            color: white;
+
+        }
+
+        .flex-items img {
+            /* height: 100px;
+            width: 100px; */
+            background-color: black;
+            height: 50px;
+        max-width: 50px;
+        border-radius: 50%;
+        }
+
+        .column3 {
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            height: 300px;
+            width: 500px;
+        }
+
+        .column5 {
+            display: flexbox;
+            /* margin: 20px; */
+            /* background-color: cornsilk; */
+            height: 600px;
+            width: 400px;
+        }
+
+        .column4 {
+            /* margin-top: 20px;
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            border: solid 2px rgb(243, 217, 217);
+            align-items: left; */
+        }
+
+        .row3 {
+            position: relative;
+            text-align: left;
+            color: rgb(250, 245, 245);
+
+        }
+
+
+        .row3 img {
+            margin-top: 10px;
+            height: 500px;
+            width: 1000px;
+        }
+
+        .row4 img {
+            margin-top: 10px;
+            margin-left: 10px;
+            height: 200px;
+            width: 320px;
+        }
+
+        .container-4 {
+            margin-top: 20px;
+            margin-left: 40px;
+            display: flex;
+            flex-direction: row;
+            height: 1000px;
+
+        }
+
+        .three {
+            /* margin-left: 20px; */
+            margin-right: 20px;
+            display: flex;
+            flex-direction: row;
+
+
+        }
+
+
+        footer {
+            margin-left: 20px;
+            margin-top: 20px;
+            background-color: black;
+            color: white;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            text-align: center;
+            height: 300px;
+            width: 1500px;
+            /* line-height: 100px; */
+        }
+
+        .foot2, .foot1 {
+            display: inline;
+            display: flex;
+            flex-direction: row;
+
+        }
+        .foot{
+            display: inline;
+            display: flex;
+            flex-direction: row;
+           line-height: 10px;
+           margin: 2px 0px 2px 30px ;
+
+        }
+
+        .footrow1 {
+            display: inline;
+            /* display: flex; */
+            margin: 2px 0px 2px 10px ;
+            line-height: 10px;
+            /* margin-left: 5px;
+            margin-right: 0px; */
+        }
+
+        .footrow2 , .footrow{
+            display: inline;
+            /* display: flex; */
+            margin: 2px 0px 2px 10px ;
+            line-height: 10px;
+            /* margin-left: 10px;
+            margin-right: 0px; */
+        }
+
+        .footrow3 {
+            /* display: inline; */
+            /* display: flex; */
+            margin: 2px 0px 2px 10px ;
+            line-height: 10px;
+        }
+
+        /* .footrow4 {
+            display: inline;
+            display: flex;
+            margin: 10px;
+        } */
+    </style>
+
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><img src="C:\Users\wow\Desktop\codekul.html\images\BBC_logo1.png" alt="BBC_logo" height="50"
+                        width="200"></li>
+                <li>HOME</li>
+                <li>NEWS</li>
+                <li>SPORT</li>
+                <li>REEL</li>
+                <li>WORK LIFE</li>
+                <li><a href="file:///C:/Users/wow/Desktop/codekul.html/bbc_travel.html"> TRAVEL</a></li>
+                <li>FUTURE</li>
+                <li>CULTURE</li>
+                <li>MORE</li>
+                <li><input type="search" placeholder="SEARCH"></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="top">
+        <div class="left">
+            <h2><b>Welcome to BBC.com</b></h2>
+        </div>
+        <div class="right">
+            <h2><b>Monday, 12 April</b></h2>
+        </div>
+    </div>
+    <main class="container">
+
+        <section class="container-1">
+            <div class="column-1">
+                <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/11D5F/production/_117955037_hi066682704.jpg">
+                <div class="bottom-left">
+                    <h1>Gun salutes planned across UK in tribute to Philip.</h1>
+                    <h2>Military personnel wore black face coverings for the gun salute at Hillsborough Castle in County
+                        Down.</h2>
+
+
+                </div>
+
+
+            </div>
+            <div class="column2">
+                <div class="two">
+                    <div class="row1">
+                        <img src="https://therealchamps.com/wp-content/uploads/getty-images/2020/03/1203619740.jpeg">
+                        <div class="bottom-left">
+                            <h3>La Liga: Real Madrid 2-1 Barcelona- <br>Mingueza pulls one back.</h3>
+                        </div>
+                    </div>
+
+                    <div class="row1">
+                        <img
+                            src="https://ichef.bbci.co.uk/news/976/cpsprodpb/17B26/production/_117926079_cbb87e2b-9a50-4fdf-b8f8-c72aa4878a45.jpg">
+                        <div class="bottom-left">
+                            <h3>World leaders pay tribute to <br> 'steadfast' prince.</h3>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="two">
+                    <div class="row1">
+                        <img src="https://ychef.files.bbci.co.uk/1600x900/p09c8hjw.webp">
+                        <div class="bottom-left">
+                            <h3>-The harmful "ableist" language you unknowingly use.</h3>
+                        </div>
+
+                    </div>
+
+
+                    <div class="row1">
+                        <img
+                            src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202104/WhatsApp_Image_2021-04-06_at_9_1200x768.jpeg?size=237:133">
+                        <div class="bottom-left">
+                            <h3>Gun salutes planned across UK in tribute to Philip.</h3>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <br>
+
+        <div class="top-1">
+            <h1>NEWS</h1>
+        </div>
+        <section class="container-2">
+            <div class="column2">
+                <div class="two">
+                    <div class="row2">
+                        <img src="https://static.dw.com/image/6308104_303.jpg">
+                        <span><b>
+                                <h1>Ash falls like snow after
+                                    St Vincent volcano eruption.
+                                </h1>
+                                <h3>Huge plumes of smoke filled the sky above the Caribbean island, forcing thousands
+                                    from their homes.</h3>
+                            </b></span>
+                        <h5>
+                            <p class="low1"><b>LATIN AMERICA & CARIBBEAN</b></p>
+                        </h5>
+
+                    </div>
+
+                    <div class="row2">
+                        <img src="https://www.daily-sun.com/assets/news_images/2021/04/10/ds-myanmar-1.jpg">
+                        <span><b>
+                                <h1>Myanmar citizens flee to India to escape violence.
+                                </h1>
+                                <h3>India is the closest refuge for Myanmar nationals fleeing violence following
+                                    February's military coup.</h3>
+                            </b></span>
+                        <h5>
+                            <p class="low2"><b>INDIA</b></p>
+                        </h5>
+                    </div>
+
+                    <div class="row2">
+                        <img
+                            src="https://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/243A/production/_117947290_whatsubject.jpg">
+                        <span><b>
+                                <h1>Masters round three: England's Rose leads - play suspended but due to resume at
+                                    22:15 BST.
+                                </h1>
+                                <h3>Third round of the 2021 Masters from Augusta - follow live text updates and listen
+                                    to BBC radio commentary.</h3>
+                            </b></span>
+                        <h5>
+                            <p class="low3"><b>GOLF</b></p>
+                        </h5>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="top-1">
+            <h1>SPORT</h1>
+        </div>
+
+
+        <section class="container-3">
+            <div class="column3">
+                <div class="two">
+                    <div class="row2">
+                        <img
+                            src="https://ichef.bbci.co.uk/onesport/cps/976/cpsprodpb/96AF/production/_117957583_mediaitem117957582.jpg">
+                        <span><b>
+                                <h1>Alexander-Arnold has nothing to prove.
+                                </h1>
+                                <h3>
+                                    Trent Alexander-Arnold does not have to <br>"prove anything", said Jurgen Klopp who
+                                    <br>wants to focus on Liverpool's "massive" 2-1 <br>win over Aston Villa.
+                                </h3>
+                            </b></span>
+                        <h5>
+                            <p class="low1"><b>LATIN AMERICA & CARIBBEAN</b></p>
+                        </h5>
+
+                    </div>
+
+                    <div class="row2">
+                        <img
+                            src="https://ichef.bbci.co.uk/onesport/cps/976/cpsprodpb/38EF/production/_117957541_hi066683463.jpg">
+                        <span><b>
+                                <h1>Will Bielsa be at Leeds next season?
+                                </h1>
+                                <h3>BBC Sport's Simon Stone looks at the impact Marcelo Bielsa has had at Leeds and the
+                                    importance of him staying at Elland Road.
+                                </h3>
+                            </b></span>
+                        <h5>
+                            <p class="low2"><b>FOOTBALL</b></p>
+                        </h5>
+                    </div>
+
+                    <div class="row2">
+                        <img
+                            src="https://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/243A/production/_117947290_whatsubject.jpg">
+                        <span><b>
+                                <h1>Masters round three: England's Rose leads - play suspended but due to resume at
+                                    22:15 BST.
+                                </h1>
+                                <h3>Third round of the 2021 Masters from Augusta - follow live text updates and listen
+                                    to BBC radio commentary.</h3>
+                            </b></span>
+                        <h5>
+                            <p class="low3"><b>GOLF</b></p>
+                        </h5>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+        <div class="top-1">
+            <h1>EDITOR's PICK</h1>
+        </div>
+
+
+
+        <div class="container-4">
+            <div class="column4">
+
+                <div class="row3">
+                    <img
+                        src="https://smile.cebupacificair.com/wp-content/uploads/2015/12/shutterstock_697069453_Singapore.jpg">
+
+                    <div class="bottom-left">
+                        <h1>The Asian City Obsessed With Hygiene.</h1>
+                        <h3>A cultural legacy of cleanliness prepared the nation for Covid-19.</h3>
+                        <h5>
+                            <p class="low1"><b>TRAVEL</b></p>
+                        </h5>
+                    </div>
+
+                </div>
+
+                <div class="three">
+                    <div class="row4">
+                        <img
+                            src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202104/935830-915395-india-china-dise.jpg?size=237:133">
+                        <figcaption class="fig">
+                            <h4>eight of the best films of 2021
+
+                            </h4>
+                        </figcaption>
+
+                    </div>
+
+                    <div class="row4">
+                        <img
+                            src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202104/935830-915395-india-china-dise.jpg?size=237:133">
+                        <figcaption class="fig">
+                            <h4>eight of the best films of 2021
+
+                            </h4>
+                        </figcaption>
+
+                    </div>
+
+                    <div class="row4">
+                        <img
+                            src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202104/WhatsApp_Image_2021-04-06_at_9_1200x768.jpeg?size=237:133">
+                        <figcaption class="fig">
+                            <h4>Keeping vaccine off private
+                                <br> market good for India but
+                                <br> not for pharma industry: <br>SII's Adar Poonawalla
+                            </h4>
+                        </figcaption>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="column5">
+
+                <!-- <b><p><h1>TOP STORIES</h1></p></b> -->
+                <h1>
+                    <div class="flex-items-top">
+                        <p>Latest Buisness News</p>
+                    </div>
+                </h1>
+
+                <div class="flex-items">
+                    <img src="https://www.labelsxpress.com/img/products/1364060068_NUMBERS-1Red1.5diameterCircle_1.jpg"
+                        alt="" />
+                    <span>
+                        <h3>
+                            Maharashtra breaks Covid record again, reports nearly 60,000 new cases.</h3>
+                    </span>
+
+                </div>
+                <div class="flex-items">
+                    <img src="https://www.pngitem.com/pimgs/m/32-323281_number-digit-2-png-transparent-images-transparent-backgrounds.png"
+                        alt="" />
+                    <span>
+                        <h3>Quiz: How well do you know poll-bound Bengal?</h3>
+                    </span>
+                </div>
+                <div class="flex-items">
+                    <img src="C:\Users\wow\Desktop\codekul.html\gpay.jpg" alt="" />
+                    <span>
+                        <h3> India back to positive growth but Covid-19 still a downside risk: IMF's Gita Gopinath.</h3>
+                    </span>
+                </div>
+                <div class="flex-items">
+                    <img src="C:\Users\wow\Desktop\codekul.html\gpay.jpg" alt="" />
+                    <span>
+                        <h3> Preparing to take a Covid-19 vaccine? Read this first..</h3>
+                    </span>
+                </div>
+                <div class="flex-items">
+                    <img src="C:\Users\wow\Desktop\codekul.html\gpay.jpg" alt="" />
+                    <span>
+                        <h3> Netflix’s The Serpent revives Charles Sobhraj’s cold-blooded story. Does it work?</h3>
+                    </span>
+                </div>
+                <div class="flex-items">
+                    <img src="C:\Users\wow\Desktop\codekul.html\gpay.jpg" alt="" />
+                    <span>
+                        <h3>Tiger Woods drove at almost double the speed limit before car crash</h3>
+                    </span>
+                </div>
+                <div class="flex-items">
+                    <img src="C:\Users\wow\Desktop\codekul.html\gpay.jpg" alt="" />
+                    <span>
+                        <h3>Tata Motors brings in Value Differentiation in BSVI products with 5L Turbotronn engine</h3>
+                    </span>
+                </div>
+    </main>
+
+    <footer class="footer">
+        <div class="foot"><h1>Explore the BBC</h1></div>
+       <!-- <br><br><br><br><br><br><br><br><br><br><br><br> -->
+
+     <!-- <div class="foot1">
+        <li class="footrow">
+            <h4>Home</h4>
+        </li>
+        <li class="footrow">
+            <h4>News
+            </h4>
+        </li>
+        <li class="footrow">
+            <h4>Sport</h4>
+        </li>
+        <li class="footrow">
+            <h4>Reel</h4>
+        </li>
+        <li class="footrow">
+            <h4>Worklife</h4>
+        </li>
+        <li class="footrow">
+            <h4>Travel</h4>
+        </li>
+    </div>
+
+
+        <li class="footrow1">
+            <h4>Future</h4>
+        </li>
+        <li class="footrow1">
+            <h4> Culture</h4>
+        </li>
+        <li class="footrow1">
+            <h4>Music</h4>
+        </li>
+        <li class="footrow1">
+            <h4>TV</h4>
+        </li>
+        <li class="footrow1">
+            <h4>Weather</h4>
+        </li>
+        <li class="footrow1">
+            <h4>Sounds</h4>
+        </li>
+
+       
+         -->
+        
+
+        
+        
+        
+        <div class="foot2">
+            <li class="footrow2">
+                <h4>Terms of Use</h4>
+            </li>
+            <li class="footrow2">
+                <h4>About the BBC</h4>
+            </li>
+            <li class="footrow2">
+                <h4>Privacy Policy</h4>
+            </li>
+            <li class="footrow2">
+                <h4>Cookies</h4>
+            </li>
+            <li class="footrow2">
+                <h4>Accessibility Help</h4>
+            </li>
+            <li class="footrow2">
+                <h4>Parental Guidance</h4>
+            </li>
+            <li class="footrow2">
+                <h4>Contact the BBC</h4>
+            </li>
+            <li class="footrow2">
+                <h4>Get Personalised Newsletters</h4>
+            </li>
+            <li class="footrow2">
+                <h4>Advertise with us</h4>
+            </li>
+        </div>
+        <li class="footrow3">
+            <h4>AdChoices/Do Not Sell My Info</h4>
+            </p>
+        </li>
+
+
+
+
+        <li class="footrow3">
+            <h2>Copyright © 2021 BBC. The BBC is not responsible for the content of external sites. Read about our
+                approach to external linking.</h2></li>
+            
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- </main> -->
+
+</body>
+
+</html>
+
+
+<!-- 
+<div class="row3">
+    <img
+        src="https://ichef.bbci.co.uk/onesport/cps/976/cpsprodpb/96AF/production/_117957583_mediaitem117957582.jpg">
+    <span><b>
+            <h1>Alexander-Arnold has nothing to prove.
+            </h1>
+            <h3>
+                Trent Alexander-Arnold does not have to <br>"prove anything", said Jurgen Klopp who
+                <br>wants to focus on Liverpool's "massive" 2-1 <br>win over Aston Villa.
+            </h3>
+        </b></span>
+    <h5>
+        <p class="low1"><b>LATIN AMERICA & CARIBBEAN</b></p>
+    </h5>
+
+</div>
+
+<div class="row3">
+    <img
+        src="https://ichef.bbci.co.uk/onesport/cps/976/cpsprodpb/38EF/production/_117957541_hi066683463.jpg">
+    <span><b>
+            <h1>Will Bielsa be at Leeds next season?
+            </h1>
+            <h3>BBC Sport's Simon Stone looks at the impact Marcelo Bielsa has had at Leeds and the
+                importance of him staying at Elland Road.
+            </h3>
+        </b></span>
+    <h5>
+        <p class="low2"><b>FOOTBALL</b></p>
+    </h5>
+</div>
+
+<div class="row3">
+    <img
+        src="https://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/243A/production/_117947290_whatsubject.jpg">
+    <span><b>
+            <h1>Masters round three: England's Rose leads - play suspended but due to resume at
+                22:15 BST.
+            </h1>
+            <h3>Third round of the 2021 Masters from Augusta - follow live text updates and listen
+                to BBC radio commentary.</h3>
+        </b></span>
+    <h5>
+        <p class="low3"><b>GOLF</b></p>
+    </h5>
+
+</div> -->
